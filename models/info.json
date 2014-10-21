@@ -1,0 +1,19 @@
+{
+    "name": "info",
+    "base": "PersistedModel",
+    "properties": {
+        "Name": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "comment": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []
+}
