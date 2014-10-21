@@ -6,10 +6,28 @@ var app = vf();
 
 
 app.use(vf.favicon());
-
 app.use(bodyParser.urlencoded({ extended: true }));
-
 boot(app, __dirname);
+
+
+
+// console.log(app.datasources.db);
+
+var ds = app.datasources.db,
+    info = app.models.info;
+
+
+app.post('/info', function(req, res){
+    var obj = req.body.itb_ajax_form;
+//  var obj2 =  req.body;
+//	console.log(obj2);
+    info.create(obj, function(err) {
+        if (err) return;
+        console.log('success');
+    });
+});
+
+
 
 
 app.use(vf.urlNotFound());
