@@ -20,7 +20,7 @@ var ds = app.datasources.db,
 app.post('/info', function(req, res){
     // req.body.itb_ajax_form;
     var obj;
-    obj.name = req.body.itb_ajax_form.name;
+    obj.name = req.body.itb_ajax_form.Name;
     obj.email = req.body.itb_ajax_form.email;
     obj.comments = req.body.itb_ajax_form.comments;
 //  var obj2 =  req.body;
