@@ -18,7 +18,11 @@ var ds = app.datasources.db,
 
 
 app.post('/info', function(req, res){
-    var obj = req.body.itb_ajax_form;
+    // req.body.itb_ajax_form;
+    var obj;
+    obj.name = req.body.itb_ajax_form.name;
+    obj.email = req.body.itb_ajax_form.email;
+    obj.comments = req.body.itb_ajax_form.comments;
 //  var obj2 =  req.body;
 //	console.log(obj2);
     info.create(obj, function(err) {
