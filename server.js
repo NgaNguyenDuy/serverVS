@@ -24,7 +24,7 @@ app.post('/info', function(req, res){
     obj.comment = req.body.itb_ajax_form.comments;
     info.create(obj, function(err) {
         if (err) return;
-        res.redirect('/');
+        res.redirect('http://vsoft.vn');
         // console.log('success');
     });
 });
