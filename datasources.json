@@ -1,6 +1,12 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  }
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "accountDB": {
+        "name": "accountDB",
+        "connector": "mongodb",
+        "port": 27017,
+        "database": "demo"
+    }
 }
