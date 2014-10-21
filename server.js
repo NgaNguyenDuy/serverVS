@@ -23,7 +23,7 @@ app.post('/info', function(req, res){
 //	console.log(obj2);
     info.create(obj, function(err) {
         if (err) return;
-        console.log('success');
+        // console.log('success');
     });
 });
 
