@@ -7,7 +7,6 @@ var app = vf();
 
 app.use(vf.favicon());
 
-var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 boot(app, __dirname);
