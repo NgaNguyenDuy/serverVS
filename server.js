@@ -1,13 +1,16 @@
 var vf = require('vf');
 var boot = require('vsoft-boot');
+var bodyParser = require('body-parser');
 
 var app = vf();
 
 
 app.use(vf.favicon());
+
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+
 boot(app, __dirname);
-
-
 
 
 app.use(vf.urlNotFound());
