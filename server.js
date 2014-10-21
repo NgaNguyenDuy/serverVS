@@ -10,9 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 boot(app, __dirname);
 
 
-
-// console.log(app.datasources.db);
-
 var ds = app.datasources.db,
     info = app.models.info;
 
@@ -24,7 +21,7 @@ app.post('/info', function(req, res){
     obj.comment = req.body.itb_ajax_form.comments;
     info.create(obj, function(err) {
         if (err) return;
-        res.redirect('http://vsoft.vn');
+        // res.redirect('http://vsoft.vn');
         // console.log('success');
     });
 });
@@ -43,6 +40,6 @@ app.start = function() {
     });
 };
 
-if(require.main === module) {
+//if(require.main === module) {
     app.start();
-}
+//}
