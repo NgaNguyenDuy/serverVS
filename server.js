@@ -24,6 +24,8 @@ app.post('/info', function(req, res){
     obj.email = req.body.email;
     obj.comment = req.body.comments;
     
+    console.log(obj);
+    
     info.create(obj, function(err) {
         if (err) return;
         res.send('OK');
