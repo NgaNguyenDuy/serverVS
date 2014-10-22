@@ -33,21 +33,13 @@ var ds = app.datasources.db,
 
 app.post('/info', function(req, res){
     var obj = {};
-    // obj.Name = req.body.itb_ajax_form.name;
-    // obj.email = req.body.itb_ajax_form.email;
-    // obj.comment = req.body.itb_ajax_form.comments;
     
     obj.Name = req.body.name;
     obj.email = req.body.email;
     obj.comment = req.body.comments;
     
-    console.log(obj);
-    
     info.create(obj, function(err) {
         if (err) return;
-        res.send('OK');
-        // res.redirect('http://vsoft.vn');
-        // console.log('success');
     });
 });
 
