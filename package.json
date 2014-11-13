@@ -8,7 +8,7 @@
   "dependencies": {
     "errorhandler": "^1.2.2",
     "express": "~4.9.0",
-    "loopback-connector-mongodb": "^1.4.4",
+    "loopback-connector-mongodb": "~1.4.4",
     "loopback-datasource-juggler": "^2.10.1",
     "serve-favicon": "^2.1.6",
     "vf": "*",
