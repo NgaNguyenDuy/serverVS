@@ -40,6 +40,7 @@ app.post('/info', function(req, res){
     
     info.create(obj, function(err) {
         if (err) return;
+	res.json({"message": "success"});
     });
 });
 
